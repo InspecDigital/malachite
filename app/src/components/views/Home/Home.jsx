@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Form } from 'components/Form';
 
 class Home extends Component {
 
@@ -6,12 +7,7 @@ class Home extends Component {
 
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Form form="malachite" />
       </div>
     );
 

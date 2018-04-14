@@ -1,0 +1,97 @@
+.task-detail {
+  position: relative;
+
+  .task-detail-body {
+    padding: 10px 10px 76px 10px;
+  }
+
+  .col2 {
+    padding-left: 0;
+  }
+
+  .mobile-task-detail-disclosure-body {
+    padding: 16px;
+  }
+
+  .task-detail-disclosure-controls {
+    background: #fff;
+    border-top: 1px solid #ccc;
+    bottom: 0;
+    height: 66px;
+    line-height: 66px;
+    padding: 0 16px;
+    position: sticky;
+    width: 100%;
+    z-index: 30000;
+  }
+
+  .task-detail-footer {
+    background: $mdc-theme-background;
+    border-top: 1px solid #ccc;
+    bottom: 0;
+    height: 66px;
+    left: 0;
+    line-height: 66px;
+    padding: 0 16px;
+    position: absolute;
+    width: 100%;
+
+    .col button:last-child {
+      margin-left: 12px;
+    }
+  }
+
+  @include media('<=medium') {
+
+    .task-detail-footer {
+      position: fixed;
+    }
+
+  }
+
+}
+
+@include media('<=small') {
+
+  .task-detail {
+    margin-top: 60px;
+  }
+
+}
+
+.form {
+  padding: 8px;
+
+  .form-field-label {
+    margin-top: 30px;
+  }
+
+  .form-section {
+    margin-bottom: 36px;
+
+    .form-section-content {
+      padding: 0 8px;
+    }
+  }
+
+  .mdc-text-field {
+    margin-top: 24px;
+  }
+
+  .mdc-radio {
+    padding: 5px;
+  }
+
+  .mdc-text-field-helptext--validation-msg {
+    @extend %color-red;
+  }
+
+  .mdc-text-field--textarea .mdc-text-field__label {
+    background: transparent;
+  }
+
+  .mdc-text-field--textarea {
+    border: 1px solid $piac-gray-fifteen;
+    border-radius: 3px;
+  }
+}
