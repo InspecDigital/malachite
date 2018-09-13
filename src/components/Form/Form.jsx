@@ -10,7 +10,7 @@ class Form extends Component {
 
   getForm = () => {
 
-    switch (this.props.form.toLowerCase()) {
+    switch (this.props.form.title.toLowerCase()) {
       case 'malachite':
         return (<MalachiteForm {...this.props} />);
       default:

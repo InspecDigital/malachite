@@ -5,9 +5,13 @@ class Home extends Component {
 
   render() {
 
+    const FORM = {
+      title: 'malachite'
+    };
+
     return (
       <div className="App">
-        <Form form="malachite" />
+        <Form form={FORM} />
       </div>
     );
 
